@@ -1,38 +1,50 @@
-# sv
+# Research Carrer
+Sveltekit framework based basic project which displays companies that offer research carrer oppurtunities
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Dependencies
+- Sveltekit (Frontend Meta Framework)
+- Svelte (Frontend language)
+- Tailwind CSS (CSS Utility Framework)
+- Shadcn UI (Bits UI wrappers)
+- Cobe (Earth focused 3.js wrapper)
+- Lucide (SVG Icon Library)
+- Vite (Build Tool)
+- Bun (JavaScript Runtime, Bundler, Package Manager, CLI)
+- Cloudflare Pages (Future Hosting)
 
-## Creating a project
+## Screenshots
+- Initial Landing Section
+![](./Landing.png)
+- Actual Content Section
+![](./Table.png)
 
-If you're seeing this, you've probably already done this step. Congrats!
+
+## Installation
+Very Easy Installations
+- Firstly, clone the repository
+- Secondly, install dependencies
+- Thirdly, run dev server
 
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+# Firstly
+git clone https://github.com/17anirudh/research-carrer.git
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
 ```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Secondly
+bun install
+```
+```sh
+# Thirdly
+bun run dev
 ```
 
 ## Building
-
 To create a production version of your app:
-
 ```sh
-npm run build
+bun run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+You can preview the production build with 
+```sh
+bun run preview
+```
