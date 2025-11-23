@@ -1,6 +1,7 @@
 <script lang="ts">
     import Tables from "./components/tables.svelte";
-    import EarthGlobe from "$lib/components/ui/globe/globe1.svelte";
+    import EarthGlobe from "./components/globe1.svelte";
+    import ExpandableCard from "./components/expandable-card.svelte";
     import { Button } from "$lib/components/ui/button/index";
     import { Spinner } from "$lib/components/ui/spinner/index";
     import { onMount } from "svelte";
@@ -14,7 +15,7 @@
     });
 </script>
 
-<div class="flex flex-col p-7 gap-7">
+<main class="flex flex-col p-7 gap-7">
     {#if loading}
         <div class="flex items-center gap-3 h-screen w-screen justify-center">
             <p class="text-2xl animate-pulse">Loading the list......</p>
@@ -39,5 +40,8 @@
             with their website and application portals.
         </p>
         <Tables />
+        <div class="h-screen w-screen mt-60">
+            <ExpandableCard />
+        </div>
     {/if}
-</div>
+</main>
